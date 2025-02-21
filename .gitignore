@@ -1,17 +1,33 @@
-# Ignore dependencies from npm and Composer:
-/node_modules
-/vendor
+build/*
+!build/vendor/
+languages
+node_modules
+vendor
 
-# Ignore generated JavaScript files:
-*.min.js
+# https://yarnpkg.com/getting-started/qa#which-files-should-be-gitignored
+.pnp.*
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/sdks
+!.yarn/versions
 
-# Ignore generated CSS files:
-style.css
-style-editor.css
-style-editor-extra.css
+# Log files
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
 
-# Ignore the generated zip file:
-_tw.zip
+# Editor directories and files
+.idea
+.vscode
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+config.codekit3
 
-# Ignore .DS_Store files from macOS:
+# OS specific files
 .DS_Store

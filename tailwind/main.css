@@ -1,0 +1,33 @@
+@import "./theme.css";
+
+/**
+ * Add Tailwind Typography and a corresponding config file.
+ */
+@config "./typography.config.js";
+
+/**
+ * Add custom `@font-face` rules.
+ */
+@import "./fonts.css";
+
+/**
+ * Add custom base styles.
+ */
+@import "./base.css";
+
+/**
+ * Add Tailwind's component classes and any component classes registered by
+ * plugins, then add custom component classes.
+ *
+ * The `components.css` file is located in a subfolder to allow for additional
+ * components files from, e.g., vendor packages. Those files need to be
+ * manually added below.
+ */
+@import "./components.css";
+
+
+/**
+ * Add Tailwind's utility classes and any utility classes registered by
+ * plugins, then add custom utility classes.
+ */
+@import "./utilities.css";
